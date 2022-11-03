@@ -43,6 +43,7 @@ export default {
       }
     },
     async updateContact(data) {
+      console.log(this.contact._id);
       try {
         await ContactService.update(this.contact._id, data);
         this.message = "Liên hệ được cập nhật thành công.";
